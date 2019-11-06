@@ -31,47 +31,37 @@ class App extends React.Component {
     topScore: 0
   };
 
-  handleClick = itemNo => {
-    console.log(itemNo);
+  handleClick = id => {
+    console.log(id);
     let doubleClicked = false;
 
-    //a state snapshot to minimize state updates
-    // let update = {
-    //   superbats: [...this.state.superbats],
-    //   score: this.state.score,
-    //   topScore: this.state.topScore
-    // };
-
-    //click updates
-    // update.superbats.forEach(superbat => {
-    //   if (superbat.id === itemNo) {
-    //     if (superbat.clicked) {
-    //       doubleClicked = true;
-    //     } else {
-    //       superbat.clicked = true;
-    //       update.score++;
-    //       if (update.score > update.topScore) {
-    //         update.topScore = update.Score;
-    //       }
-    //     }
-    //   }
-    // });
-
-    this.setState({
-      items: superbats.forEach(superbat => {
-        if (superbat.id === itemNo) {
-          if (superbat.clicked) {
-            doubleClicked = true;
-          } else {
-            superbat.clicked = true;
-            this.setState({ score: this.state.score + 1 });
-          }
+    this.state.superbats.forEach(superbat => {
+      if (superbat.id === id) {
+        if (superbat.clicked) {
+          doubleClicked = true;
+        } else {
+          superbat.clicked = true;
+          this.setState(
+            (prevState, props) => ({ score: prevState.score + 1 }),
+            () => {
+              if (this.state.score > this.state.topScore) {
+                let ultScore = this.state.score;
+                this.setState(
+                  (prevState, props) => ({ topScore: ultScore }),
+                  () => {
+                    console.log("TopScore: " + this.state.topScore);
+                  }
+                );
+              }
+              console.log("Score: " + this.state.score);
+            }
+          );
         }
-      })
+      }
     });
 
     this.setState({ items: shuffle(superbats) });
-    console.log("Score: " + this.state.score);
+
     console.log("TopScore: " + this.state.topScore);
     console.log("DoubleClicked: " + doubleClicked);
   };
