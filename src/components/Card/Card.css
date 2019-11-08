@@ -21,4 +21,6 @@
 
 .clicky-target:hover {
   background-color: #e0e0e0;
+  padding: 2px;
+  box-sizing: border-box;
 }

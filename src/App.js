@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.css";
 import Card from "./components/Card";
+import Panel from "./components/Panel";
 import superbats from "./superbats.json";
+import poster from "./poster.json";
 
 function shuffle(array) {
   // Make a shuffled copy of an array using Fisher-Yates
@@ -27,8 +29,12 @@ function shuffle(array) {
 class App extends React.Component {
   state = {
     superbats: shuffle(superbats),
+    poster: poster,
     score: 0,
-    topScore: 0
+    topScore: 0,
+    actor: "",
+    show: "",
+    released: ""
   };
 
   reset = () => {
@@ -38,8 +44,24 @@ class App extends React.Component {
     this.setState({ score: 0 });
   };
 
-  handleClick = id => {
+  onMouseEnter = id => {
     console.log(id);
+    this.state.superbats.forEach(superbat => {
+      if (superbat.id === id) {
+        this.setState({
+          actor: superbat.actor,
+          show: superbat.show,
+          released: superbat.released
+        });
+      }
+    });
+  };
+
+  onMouseLeave = () => {
+    this.setState({ actor: "", show: "", released: "" });
+  };
+
+  handleClick = id => {
     let doubleClicked = false;
     let newScore = this.state.score + 1; //this doesn't alter state.score
 
@@ -61,23 +83,24 @@ class App extends React.Component {
     this.setState({
       superbats: shuffle(superbats)
     });
-
-    console.log("Score: " + this.state.score);
-    console.log("TopScore: " + this.state.topScore);
-    console.log("DoubleClicked: " + doubleClicked);
-    console.log("New State: " + JSON.stringify(superbats));
   };
 
   render() {
-    const { superbats } = this.state;
-
     return (
       <div className="App">
         <header className="App-header">
+          <Panel newState={this.state} />
           <div>
             Score : {this.state.score} Top Score: {this.state.topScore}{" "}
           </div>
-          <Card arrayName={superbats} handleClick={this.handleClick} />
+          <Card
+            arrayName={
+              this.state.score === 18 ? this.state.poster : this.state.superbats
+            }
+            handleClick={this.handleClick}
+            onMouseEnter={this.onMouseEnter}
+            onMouseLeave={this.onMouseLeave}
+          />
         </header>
       </div>
     );

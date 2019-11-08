@@ -1,0 +1,20 @@
+.container {
+  border: 2px white solid;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 99.6vw;
+}
+
+.field1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container * {
+  display: inline;
+}
+
+.propvalue {
+  font-size: 0.8em;
+  color: red;
+}
