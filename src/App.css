@@ -8,6 +8,9 @@
 
 .App-header {
   background-color: #282c34;
+  background-image: url("BvS.jpg");
+  background-size: 1290px;
+  background-position: 88px 58px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

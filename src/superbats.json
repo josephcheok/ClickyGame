@@ -4,7 +4,7 @@
     "actor": "Adam West",
     "show": "Batman",
     "image": "../images/Batman - AW1.jpg",
-    "released": "12/01/1966",
+    "released": "Jan 1966",
     "clicked": false
   },
   {
@@ -12,7 +12,7 @@
     "actor": "Ben Affleck",
     "show": "Justice League",
     "image": "../images/Batman - BA1.png",
-    "released": "19/03/2016",
+    "released": "Mar 2016",
     "clicked": false
   },
   {
@@ -20,7 +20,7 @@
     "actor": "Ben Affleck",
     "show": "Batman vs Superman: Dawn of Justice",
     "image": "../images/Batman - BA2.png",
-    "released": "16/11/2017",
+    "released": "Nov 2017",
     "clicked": false
   },
   {
@@ -28,7 +28,7 @@
     "actor": "Christian Bale",
     "show": "The Dark Knight",
     "image": "../images/Batman - CB1.jpg",
-    "released": "16/07/2008",
+    "released": "Jul 2008",
     "clicked": false
   },
   {
@@ -36,7 +36,7 @@
     "actor": "Christian Bale",
     "show": "The Dark Knight Rises",
     "image": "../images/Batman - CB2.jpg",
-    "released": "19/07/2012",
+    "released": "Jul 2012",
     "clicked": false
   },
   {
@@ -44,7 +44,7 @@
     "actor": "Christian Bale",
     "show": "Batman Begins",
     "image": "../images/Batman - CB5.png",
-    "released": "16/06/2005",
+    "released": "Jun 2005",
     "clicked": false
   },
   {
@@ -52,7 +52,7 @@
     "actor": "George Clooney",
     "show": "Batman and Robin",
     "image": "../images/Batman - GC1.jpg",
-    "released": "12/06/1997",
+    "released": "Jun 1997",
     "clicked": false
   },
   {
@@ -60,7 +60,7 @@
     "actor": "Michael Keaton",
     "show": "Batman",
     "image": "../images/Batman - MK2.jpg",
-    "released": "31/08/1989",
+    "released": "Aug 1989",
     "clicked": false
   },
   {
@@ -68,7 +68,7 @@
     "actor": "Val Kilmer",
     "show": "Batman Forever",
     "image": "../images/Batman - VK3.jpg",
-    "released": "15/07/1995",
+    "released": "Jul 1995",
     "clicked": false
   },
   {
@@ -76,7 +76,7 @@
     "actor": "Brandon Routh",
     "show": "Superman Returns",
     "image": "../images/Superman - BR1.jpg",
-    "released": "29/06/2006",
+    "released": "Jun 2006",
     "clicked": false
   },
   {
@@ -84,7 +84,7 @@
     "actor": "Christopher Reeves",
     "show": "Superman IV - The Quest for Peace",
     "image": "../images/Superman - CR1.jpg",
-    "released": "4/12/1980",
+    "released": "Dec 1980",
     "clicked": false
   },
   {
@@ -92,7 +92,7 @@
     "actor": "Christopher Reeves",
     "show": "Superman",
     "image": "../images/Superman - CR2.jpg",
-    "released": "21/12/1978",
+    "released": "Dec 1978",
     "clicked": false
   },
   {
@@ -100,7 +100,7 @@
     "actor": "Dean Cain",
     "show": "Lois & Clark: The New Adventures of Superman",
     "image": "../images/Superman - DC1.jpg",
-    "released": "12/09/1993",
+    "released": "Sep 1993",
     "clicked": false
   },
   {
@@ -108,7 +108,7 @@
     "actor": "Dean Cain",
     "show": "Lois & Clark: The New Adventures of Superman",
     "image": "../images/Superman - DC2.jpg",
-    "released": "12/09/1993",
+    "released": "Sep 1993",
     "clicked": false
   },
   {
@@ -116,7 +116,7 @@
     "actor": "Henry Cavill",
     "show": "Man of Steel",
     "image": "../images/Superman - HC1.jpg",
-    "released": "27/06/2013",
+    "released": "Jun 2013",
     "clicked": false
   },
   {
@@ -124,7 +124,7 @@
     "actor": "Henry Cavill",
     "show": "Batman vs Superman: Dawn of Justice",
     "image": "../images/Superman - HC2.jpg",
-    "released": "29/06/2006",
+    "released": "Mar 2016",
     "clicked": false
   },
   {
@@ -132,7 +132,7 @@
     "actor": "Tom Welling",
     "show": "Smallville",
     "image": "../images/Superman - TW1.png",
-    "released": "16/10/2001",
+    "released": "Oct 2001",
     "clicked": false
   },
   {
@@ -140,7 +140,7 @@
     "actor": "Tom Welling",
     "show": "Smallville",
     "image": "../images/Superman - TW2.jpg",
-    "released": "16/10/2001",
+    "released": "Oct 2001",
     "clicked": false
   }
 ]
