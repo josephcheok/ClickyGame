@@ -95,7 +95,7 @@ class App extends React.Component {
           </div>
           <Card
             arrayName={
-              this.state.score === 1 ? this.state.poster : this.state.superbats
+              this.state.score === 18 ? this.state.poster : this.state.superbats
             }
             handleClick={this.handleClick}
             onMouseEnter={this.onMouseEnter}
