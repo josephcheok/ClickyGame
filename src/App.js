@@ -88,11 +88,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="custom-header"></header>
+        <div className="App-header">
           <Panel newState={this.state} />
-          <div>
-            Score : {this.state.score} Top Score: {this.state.topScore}{" "}
-          </div>
+
+          <br></br>
           <Card
             arrayName={
               this.state.score === 18 ? this.state.poster : this.state.superbats
@@ -101,7 +101,7 @@ class App extends React.Component {
             onMouseEnter={this.onMouseEnter}
             onMouseLeave={this.onMouseLeave}
           />
-        </header>
+        </div>
       </div>
     );
   }

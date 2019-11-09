@@ -6,11 +6,6 @@
   margin-block-end: 40px;
 }
 
-.propvalue {
-  font-size: 0.8em;
-  color: red;
-}
-
 ul {
   text-align: left;
   margin-block-start: 0;
@@ -35,4 +30,16 @@ li.released {
 
 li.actor {
   width: 250px;
+}
+
+li.show {
+  width: 750px;
+}
+
+li.score {
+  width: 100px;
+}
+
+.points {
+  color: lightskyblue;
 }

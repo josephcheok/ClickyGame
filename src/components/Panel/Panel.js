@@ -3,16 +3,21 @@ import "./Panel.css";
 
 const Panel = props => (
   <div className="container">
-    <ul className="field1">
+    <ul>
       <li className="released">
-        Released:{" "}
-        <span className="spanReleased">{props.newState.released}</span>{" "}
+        Released: <span>{props.newState.released}</span>{" "}
       </li>
       <li className="actor">
-        Actor:<span className="spanActor">{props.newState.actor}</span>{" "}
+        Actor:<span>{props.newState.actor}</span>{" "}
       </li>
       <li className="show">
-        Show: <span className="spanShow">{props.newState.show}</span>{" "}
+        Show: <span>{props.newState.show}</span>{" "}
+      </li>
+      <li className="score">
+        Score: <span className="points">{props.newState.score}</span>{" "}
+      </li>
+      <li className="topScore">
+        Top Score: <span className="points">{props.newState.topScore}</span>{" "}
       </li>
     </ul>
   </div>
